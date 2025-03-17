@@ -25,15 +25,12 @@ namespace WF_LAB2
             double coffeeCost2 = Convert.ToDouble(label12.Text) * (double)numericUpDown2.Value;
             double coffeeCost3 = Convert.ToDouble(label11.Text) * (double)numericUpDown3.Value;
 
-            // Вартість тістечок (ціна за порцію * кількість порцій)
             double cakeCost1 = Convert.ToDouble(label8.Text) * (double)numericUpDown4.Value;
             double cakeCost2 = Convert.ToDouble(label9.Text) * (double)numericUpDown5.Value;
             double cakeCost3 = Convert.ToDouble(label10.Text) * (double)numericUpDown6.Value;
 
-            // Обчислення загальної вартості
             Cost = coffeeCost1 + coffeeCost2 + coffeeCost3 + cakeCost1 + cakeCost2 + cakeCost3;
 
-            // Показ результату
             MessageBox.Show("Загальна вартість замовлення: " + Cost.ToString("0.00") + " грн.", "Замовлення підтверджено");
         }
 
